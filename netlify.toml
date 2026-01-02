@@ -66,6 +66,13 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000"
 
+# Redirect www to non-www (301 permanent redirect)
+[[redirects]]
+  from = "https://www.vyper.design/*"
+  to = "https://vyper.design/:splat"
+  status = 301
+  force = true
+
 # Redirect rules for clean URLs (optional)
 [[redirects]]
   from = "/contacto"
