@@ -66,21 +66,6 @@
         }
     });
     
-    // DevTools detection
-    const detectDevTools = () => {
-        const threshold = 160;
-        const widthThreshold = window.outerWidth - window.innerWidth > threshold;
-        const heightThreshold = window.outerHeight - window.innerHeight > threshold;
-        
-        if (widthThreshold || heightThreshold) {
-            // DevTools is open - redirect or show warning
-            document.body.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100vh;font-family:Arial;font-size:24px;color:#0511F2;text-align:center;"><p>Por favor, cierra las herramientas de desarrollo.<br>Gracias.</p></div>';
-        }
-    };
-    
-    // Check periodically
-    setInterval(detectDevTools, 1000);
-    
     // Protect console
     if (typeof console !== 'undefined') {
         console.log('%c¡Alto ahí! 🛑', 'color: #0511F2; font-size: 30px; font-weight: bold;');
