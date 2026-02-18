@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protección Activa - Vyper Design</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #0511F2 0%, #000000 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        .container {
+            text-align: center;
+            padding: 40px;
+            max-width: 600px;
+        }
+        .shield {
+            font-size: 100px;
+            margin-bottom: 20px;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.1); opacity: 0.8; }
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            opacity: 0.9;
+        }
+        .warning {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+        .logo {
+            margin-top: 40px;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #fff;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            border-bottom: 2px solid white;
+            transition: opacity 0.3s;
+        }
+        a:hover {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="shield">🛡️</div>
+        <h1>Protección Activa</h1>
+        <p>Este sitio web está protegido por medidas de seguridad avanzadas.</p>
+        <div class="warning">
+            <p><strong>⚠️ Advertencia de Seguridad</strong></p>
+            <p>Hemos detectado que las herramientas de desarrollo están abiertas.</p>
+            <p>Por favor, ciérralas para continuar navegando.</p>
+        </div>
+        <p style="margin-top: 30px; font-size: 0.9rem;">
+            Si esto fue un error, por favor <a href="/">vuelve al inicio</a>
+        </p>
+        <div class="logo">VYPER DESIGN</div>
+        <p style="font-size: 0.85rem; margin-top: 10px; opacity: 0.7;">
+            Seguridad y diseño que protege
+        </p>
+    </div>
+</body>
+</html>
